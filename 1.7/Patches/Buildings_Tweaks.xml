@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Sturdier, Non flammable Hivestone -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEI_HivestoneWall"]/statBases</xpath>
+    <value>
+      <statBases>
+        <MaxHitPoints>600</MaxHitPoints>
+		<Flammability>0</Flammability>
+		<Beauty>0</Beauty>
+      </statBases>  
+    </value>
+  </Operation>
+
+  <!-- Remove firefoam lifespan -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="VFEI2_FoamPod"]/comps/li[@Class="CompProperties_Lifespan"]</xpath>
+  </Operation>
+
+  <!-- Add firefoam maintenance -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEI2_FoamPod"]/comps</xpath>
+	<value>
+	  <li Class="CompProperties_Maintainable">
+				<compClass>VFEInsectoids.CompMaintenableHive</compClass>
+				<ticksHealthy>420000</ticksHealthy>
+				<ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
+				<damagePerTickRare>10</damagePerTickRare>
+			</li>
+	</value>
+    </Operation>	
+</Patch>

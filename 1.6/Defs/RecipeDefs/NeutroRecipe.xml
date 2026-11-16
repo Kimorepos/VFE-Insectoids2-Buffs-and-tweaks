@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>KIM_InsectToNeutro</defName>
+    <label>process neutroamine from insect meat</label>
+    <description>Process neutroamine from insect meat.</description>
+    <jobString>Processing neutroamine.</jobString>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workAmount>4000</workAmount>
+    <targetCountAdjustment>3</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Megaspider</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Neutroamine>3</Neutroamine>
+    </products>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers>
+		<li>BiofuelRefinery</li>
+    </recipeUsers>
+  </RecipeDef>
+
+</Defs>

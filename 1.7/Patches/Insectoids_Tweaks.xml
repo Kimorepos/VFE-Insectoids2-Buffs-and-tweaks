@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Durapod drop uranium -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEI2_Durapod"]</xpath>
+	  <value>
+	   <killedLeavingsRanges>
+			<Uranium>1~3</Uranium>
+	   </killedLeavingsRanges>
+	  </value>
+    </Operation>
+	
+  <!-- Tankroach drop uranium -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEI2_Tankroach"]</xpath>
+	  <value>
+	   <killedLeavingsRanges>
+			<Uranium>5~10</Uranium>
+	   </killedLeavingsRanges>
+	  </value>
+    </Operation>
+	
+  <!-- Ironclad drop uranium -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEI2_Ironclad"]</xpath>
+	  <value>
+	   <killedLeavingsRanges>
+			<Uranium>12~20</Uranium>
+	   </killedLeavingsRanges>
+	  </value>
+    </Operation>
+	
+  <!-- Silverfish drop uranium -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEI2_Silverfish"]</xpath>
+	  <value>
+	    <killedLeavingsRanges>
+			<Uranium>35~50</Uranium>
+		</killedLeavingsRanges>
+	  </value>
+  </Operation>	
+  
+  <!-- Faster chemfuel from Fuelmite -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEI2_Fuelmite"]/comps/li[@Class="VEF.AnimalBehaviours.CompProperties_AnimalProduct"]/gatheringIntervalDays</xpath>
+	  <value>
+			<gatheringIntervalDays>2</gatheringIntervalDays>
+	  </value>
+  </Operation>
+  
+  <!-- More chemfuel from Titantick -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEI2_Titantick"]/comps/li[@Class="VEF.AnimalBehaviours.CompProperties_AnimalProduct"]/resourceAmount</xpath>
+	  <value>
+			<resourceAmount>75</resourceAmount>
+	  </value>
+  </Operation>	
+  
+  <!-- More passive chitin from Silverfish -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEI2_Silverfish"]/comps/li[@Class="VEF.AnimalBehaviours.CompProperties_AnimalProduct"]/gatheringIntervalDays</xpath>
+	  <value>
+			<gatheringIntervalDays>7</gatheringIntervalDays>
+	  </value>
+  </Operation>	
+
+</Patch>

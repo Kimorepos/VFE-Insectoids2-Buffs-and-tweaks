@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+    <name>VFE Insectoids2: Buffs and tweaks</name>
+    <author>Kimoju</author>
+    <packageId>Kimo.Insectoids.buffs</packageId>
+    <supportedVersions>
+        <li>1.5</li>
+		<li>1.6</li>
+		<li>1.7</li>
+    </supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>oskarpotocki.vfe.insectoid2</packageId>
+			<displayName>Vanilla Factions Expanded - Insectoids 2</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3309003431</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>oskarpotocki.vfe.insectoid2</li>
+	</loadAfter>
+    <description>	 [h1] What does this mod do? [/h1] 
+
+This is just a collection of small changes and tweaks I made  to make insect stuff from VFE: Insectoids 2 a little more engaging and fun, in my opinion. 
+
+- Petroglypher can now transform standard hive walls into hivestone walls.
+
+- Hivestone walls are now slightly more resistant (600 hp from 500 hp) and are now immune to fire.
+
+- The foampod does not disappear after after 20 days anymore. Instead, it require maintenance every 7 days.
+
+- Xanides insects drop a semi random ammount of uranium when killed, based on size.
+
+- Fuelmite produce 15 chemfuel every 2 days, from 10 days before.
+
+- Titantick produce 75 chemfuel every 3 days, from 15 chemfuel before.
+
+- Silverfish produce 55 chitin every 7 days, from 20 days before
+
+- Added a new recipe to the Biofuel refinery: produce 3 neutroamine from 30 insect meat. Ideal for anyone doing a Helldiver theme run
+
+I wanted to buff the thornpod, but the cooldown is locked behind c# black magic, and changing the shrapnel damage doesn't do anything, so I couldn't do anything about that one sadly. 
+
+[h1] F.A.Q [/h1] 
+
+Q: B-But... Muh balance??
+A: Feel free to edit the value with notepad to your taste.
+
+Q: CE compatible?
+A: Probably?
+
+Q: Is it compatible with [i] insert x mod [/i] in particular ?  
+A: It should. Be aware that this patch makes the game think that standard hivewalls are natural rocks walls. It shouldn't be an issue, but that was the only way to tweak the petroglypher transformation without c#, at least that I know of.
+
+Q: Can I add it mid playthrough?
+A: You should, don't remove it mid playthrough though!
+
+Q: I have a suggestion!
+A: Feel free to ask, but no promises about adding it.
+
+[h1] Credits [/h1] 
+
+[url=https://steamcommunity.com/id/Oskarpotocki/myworkshopfiles/] Oskar Potocki and the Vanilla Expended team[/url] for their wonderful mods!
+Thanks to the lovely troubleshooters on the official Rimworld discord server for their patch advices
+</description>
+</ModMetaData>
